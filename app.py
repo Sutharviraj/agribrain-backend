@@ -242,11 +242,22 @@ def ai_chat():
             # Too Many Requests / Quota Exceeded
             return jsonify({"reply": "માફ કરશો, હાલમાં ઘણા ખેડૂતો એકસાથે સિસ્ટમનો ઉપયોગ કરી રહ્યા હોવાથી સર્વર વ્યસ્ત છે. કૃપા કરીને થોડી સેકંડ પછી ફરી પૂછો."})
         else:
-            return jsonify({"reply": f"માફ કરશો, AI સર્વરમાં કોઈ ખામી સર્જાઈ છે (Code {res.status_code})."})
+            return jsonify({"reply": f"📢 Feature Access Notice
+
+AGRIBRINE એપની આ સુવિધા હાલમાં સક્રિય છે,
+પરંતુ જરૂરી API service માટે subscription ઉપલબ્ધ ન હોવાથી
+આ feature હાલમાં ઉપયોગ માટે ઉપલબ્ધ નથી.
+
+આ સુવિધા આવનારી અપડેટમાં શરૂ કરવામાં આવશે.
+તમારા સહકાર માટે આભાર 🙏
+
+– Team AGRIBRINE
+."})
     except Exception as e:
         print("Chat API Error:", e)
         return jsonify({"reply": "ઇન્ટરનેટ કે સર્વરની કોઈ ટેકનીકલ ખામી છે. કૃપા કરીને થોડી વાર પછી ફરી પ્રયાસ કરો."})
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
+
 
