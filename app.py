@@ -9,7 +9,7 @@ CORS(app)
 # ========================================
 # ADD YOUR GEMINI API KEY HERE
 # ========================================
-GEMINI_API_KEY = "AIzaSyDzBKYEGejVbGR_4_44BBD5F09u2MqvjTY"
+GEMINI_API_KEY = "adi_api"
 
 # PID Constants
 Kp = 2.0
@@ -249,3 +249,4 @@ def ai_chat():
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
+
