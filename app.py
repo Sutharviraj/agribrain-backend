@@ -9,7 +9,7 @@ CORS(app)
 # ========================================
 # ADD YOUR GEMINI API KEY HERE
 # ========================================
-GEMINI_API_KEY = "adi_api"
+GEMINI_API_KEY = "AIzaSyDgq_1lu5uddweXrlaihIWNoRMxGO4pBCI"
 
 # PID Constants
 Kp = 2.0
